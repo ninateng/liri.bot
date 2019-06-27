@@ -33,7 +33,7 @@
   - if it isn't already .. open liri.js in your terminal .. right click liri.js and choose open in terminal
   
   - testing in terminal .. write ..
-        node liri.js __command__ __artist/or/movie title/or/song name__
+        node liri.js {command} {artist/or/movie title/or/song name}
         
         - options for commands
               concert-this
