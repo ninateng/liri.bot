@@ -7,13 +7,14 @@ var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
-var artists = [];
+
 
 module.exports = {
 
   //method to be exported
   musicInfo: function ( x ) {
 
+    
     //declaring song name from parameter
     var songName = x ;
 
@@ -24,12 +25,14 @@ module.exports = {
  
     //query search
     spotify.search({ type: 'track', query: songName }, function(err, data) {
-      
+      console.log("DATA " + JSON.stringify(data) );
       //error case
       if (err) {
         return console.log('Error occurred: ' + err);
       }
  
+    
+      var artists = [];
       //forloop to push artists into global array
       for ( var i = 0; i < data.tracks.items[0].artists.length; i++ ) {
         artists.push( data.tracks.items[0].artists[i].name )
