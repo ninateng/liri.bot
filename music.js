@@ -14,7 +14,6 @@ module.exports = {
   //method to be exported
   musicInfo: function ( x ) {
 
-    
     //declaring song name from parameter
     var songName = x ;
 
@@ -25,12 +24,12 @@ module.exports = {
  
     //query search
     spotify.search({ type: 'track', query: songName }, function(err, data) {
-      console.log("DATA " + JSON.stringify(data) );
+
       //error case
       if (err) {
         return console.log('Error occurred: ' + err);
       }
- 
+
     
       var artists = [];
       //forloop to push artists into global array
