@@ -2,6 +2,8 @@
 
 **LIRI BOT ?**
   This program works in your terminal. It will intake commands and variables and spit out some info!
+  Here is a link to see the node app in action:
+      https://www.youtube.com/watch?v=7R6fHqyQjY4&feature=youtu.be
   
  **How does it work ?**
   - open main "liri.js" in your terminal
